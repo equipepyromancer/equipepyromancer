@@ -14,14 +14,15 @@ body {
 
 h1 {
 	font-family: breatheFire2;
-	font-size: calc(2 * var(--base-font-size));
+	font-size: calc(3.5 * var(--base-font-size));
 }
 
-p {
-	font-size: var(--base-font-size);
+a:visited {
+	color: orange;
 }
 
 #font-bar {
+	z-index: 1;
 	position: sticky;
 	top: -0.1vh;
 	margin: -2.5vh -3vw;
@@ -49,6 +50,7 @@ p {
 }
 
 nav {
+	z-index: 1;
 	position: sticky;
 	top: 3.4vh;
 	margin: -2.5vh -3vw;
@@ -57,6 +59,14 @@ nav {
 	width: 99.8vw;
 	height: 7vh;
 	background-color: #404040;
+}
+
+nav img {
+	float: left;
+	margin-left: 4vw;
+	margin-top: 0.2vw;
+	width: 300px;
+	height: 40px;
 }
 
 nav a {
@@ -68,4 +78,56 @@ nav a {
 
 a[href*="about"] {
 	margin-right: 1.5vw;
+}
+
+#footnote {
+	bottom: 3.4vh;
+	margin: -2.5vh -3vw;
+	display: inline-flex;
+	font-family: Verdana;
+	font-size: 
+	text-align: right;
+	width: 99.8vw;
+	height: 7vh;
+	background-color: #404040;
+}
+
+#footnote p:nth-child(1) {
+	text-align: left;
+	margin-left: 2.5vw;
+}
+
+#footnote p:nth-child(2) {
+	text-align: right;
+	margin-left: 64vw;
+}
+
+#trabalhos {
+	height: 100vh;
+	text-align: center;
+}
+
+#trabalhos h1 {
+	margin-top: 3.5vw;
+}
+
+#vitrine {
+	height: 37vw;
+	margin-top: -1.75vw;
+	display: flex;
+	flex-direction: row;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: space-around;
+}
+
+#vitrine img {
+	width: 30vw;
+	transition: 0.4s filter;
+	filter: brightness(100%);
+}
+
+#vitrine img:hover {
+	cursor: pointer;
+	filter: brightness(35%);
 }
