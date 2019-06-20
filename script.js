@@ -1,16 +1,15 @@
 
-function fonte(e) {
-
-	var elemento = $(".acessibilidade");
-	var fonte = parseInt(elemento.css('font-size'));
+function MudarTamanhoBaseFonte(e) {
+	var elemento = $(":root");
+	var fontSize = parseInt(elemento.css("--base-font-size"));
   
-	if (e == 'a' && fonte < 32) {
-		fonte++;
-	} else if (e == 'd' && fonte > 10) { 
-		fonte--;
+	if (e == 'a' && fontSize < 32) {
+		fontSize = fontSize + 2;
+	} else if (e == 'd' && fontSize > 10) { 
+		fontSize = fontSize - 2;
 	} else if (e == 'n') {
-		fonte = 16;
+		fontSize = 16;
 	}
 
-	elemento.css("fontSize", fonte);
+	elemento.css("--base-font-size", fontSize);
 }
