@@ -1,0 +1,39 @@
+@font-face {
+	font-family: breatheFire2;
+	src: url('assets/fonts/breathe-fire-ii/breathe-fire-ii.otf');
+}
+
+body {
+	margin: -0.1vh 2vw;
+}
+
+h1 {
+	font-family: breatheFire2;
+}
+
+#font-bar {
+	position: sticky;
+	top: -0.1vh;
+	margin: -2.5vh -3vw;
+	display: inline-block;
+	font-family: Verdana;
+	text-align: right;
+	width: 99.8vw;
+	height: 3.5vh;
+	background-color: #000;
+}
+
+.btn {
+  border: none;
+  color: #FFF;
+  background-color: inherit;
+  margin: 0 -0.1vw;
+  line-height: 1em;
+  font-size: 1em;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.increase {
+	margin-right: 1vw;
+}
