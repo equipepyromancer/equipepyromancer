@@ -51,7 +51,7 @@ h2 {
 }
 
 .increase {
-	margin-right: 2.5vw;
+	margin-right: 50px;
 }
 
 nav {
@@ -68,7 +68,7 @@ nav {
 
 nav img {
 	float: left;
-	margin-left: 1vw;
+	margin-left: 40px;
 	margin-top: 0.2vw;
 	width: 300px;
 	height: 40px;
@@ -88,7 +88,7 @@ nav a[href*="index"] {
 }
 
 a[href*="about"] {
-	margin-right: 3vw;
+	margin-right: 55px;
 }
 
 #landing {
@@ -119,7 +119,7 @@ a[href*="about"] {
 }
 
 #prog {
-	margin-top: -1.75vw;
+	margin-top: -1.25vw;
 }
 
 #prog h2 {
@@ -130,7 +130,7 @@ a[href*="about"] {
 #prog img {
 	float: left;
 	width: 30vw;
-	margin-left: 1vw;
+	margin-left: 40px;
 }
 
 #ilust {
@@ -146,7 +146,7 @@ a[href*="about"] {
 #ilust img {
 	float: right;
 	width: 30vw;
-	margin-right: 0.8vw;
+	margin-right: 30px;
 }
 
 #trabalhos {
@@ -160,7 +160,9 @@ a[href*="about"] {
 }
 
 #vitrine {
-	height: 37vw;
+	height: 35vw;
+	width: 91vw;
+	margin-left: 30px;
 	margin-top: -1.75vw;
 	display: flex;
 	flex-direction: row;
@@ -170,7 +172,7 @@ a[href*="about"] {
 }
 
 #vitrine img {
-	width: 30vw;
+	width: 29vw;
 	transition: 0.4s filter;
 	filter: brightness(100%);
 }
@@ -180,12 +182,21 @@ a[href*="about"] {
 	filter: brightness(35%);
 }
 
+#contato {
+	height: 83vh;
+	margin-left: 40px;
+}
+
+#contato h1 {
+	color: #F87730;
+	margin-top: 3.5vw;
+}
+
 #footnote {
 	bottom: 3.4vh;
 	margin: -2.5vh -3vw;
 	display: inline-flex;
 	font-family: Verdana;
-	font-size: 
 	text-align: right;
 	width: 99.8vw;
 	height: 7vh;
@@ -194,10 +205,10 @@ a[href*="about"] {
 
 #footnote p:nth-child(1) {
 	text-align: left;
-	margin-left: 4vw;
+	margin-left: 80px;
 }
 
 #footnote p:nth-child(2) {
 	text-align: right;
-	margin-left: 61.5vw;
+	margin-left: 800px;
 }

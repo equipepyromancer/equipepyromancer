@@ -63,7 +63,7 @@ nav {
 
 nav img {
 	float: left;
-	margin-left: 1vw;
+	margin-left: 40px;
 	margin-top: 0.2vw;
 	width: 300px;
 	height: 40px;
@@ -84,7 +84,7 @@ a[href*="about"] {
 }
 
 #footnote {
-	margin: -1vh -2vw;
+	margin: 67vh -2vw 0;
 	display: inline-flex;
 	font-family: Verdana;
 	text-align: right;
@@ -95,10 +95,10 @@ a[href*="about"] {
 
 #footnote p:nth-child(1) {
 	text-align: left;
-	margin-left: 3.5vw;
+	margin-left: 70px;
 }
 
 #footnote p:nth-child(2) {
 	text-align: right;
-	margin-left: 61.5vw;
+	margin-left: 59.2vw;
 }
