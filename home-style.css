@@ -10,11 +10,19 @@
 
 body {
 	margin: -0.1vh 2vw;
+	background-image: url("assets/decorative/BG3.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 h1 {
 	font-family: breatheFire2;
 	font-size: calc(3.5 * var(--base-font-size));
+}
+
+h2 {
+	font-family: breatheFire2;
+	font-size: calc(2.5 * var(--base-font-size));
 }
 
 a:visited {
@@ -25,11 +33,11 @@ a:visited {
 	z-index: 1;
 	position: sticky;
 	top: -0.1vh;
-	margin: -2.5vh -3vw;
+	margin: -2.5vh -2vw;
 	display: inline-block;
 	font-family: Verdana;
 	text-align: right;
-	width: 99.8vw;
+	width: 98.8vw;
 	height: 3.5vh;
 	background-color: #000;
 }
@@ -46,24 +54,24 @@ a:visited {
 }
 
 .increase {
-	margin-right: 1vw;
+	margin-right: 2.5vw;
 }
 
 nav {
 	z-index: 1;
 	position: sticky;
 	top: 3.4vh;
-	margin: -2.5vh -3vw;
+	margin: -2.5vh -2vw;
 	display: inline-block;
 	text-align: right;
-	width: 99.8vw;
+	width: 98.8vw;
 	height: 7vh;
 	background-color: #404040;
 }
 
 nav img {
 	float: left;
-	margin-left: 4vw;
+	margin-left: 1vw;
 	margin-top: 0.2vw;
 	width: 300px;
 	height: 40px;
@@ -77,29 +85,47 @@ nav a {
 }
 
 a[href*="about"] {
-	margin-right: 1.5vw;
+	margin-right: 3vw;
 }
 
-#footnote {
-	bottom: 3.4vh;
-	margin: -2.5vh -3vw;
-	display: inline-flex;
-	font-family: Verdana;
-	font-size: 
-	text-align: right;
-	width: 99.8vw;
-	height: 7vh;
-	background-color: #404040;
+#serviços {
+	height: 100vh;
+	text-align: center;
 }
 
-#footnote p:nth-child(1) {
+#serviços h1 {
+	margin-top: 3.5vw;
+}
+
+#prog {
+	margin-top: -1.75vw;
+}
+
+#prog h2 {
 	text-align: left;
-	margin-left: 2.5vw;
+	margin-left: 33.5vw;
 }
 
-#footnote p:nth-child(2) {
+#prog img {
+	float: left;
+	width: 30vw;
+	margin-left: 1vw;
+}
+
+#ilust {
+	position: relative;
+	bottom: -10vw;
+}
+
+#ilust h2 {
 	text-align: right;
-	margin-left: 64vw;
+	margin-right: 33.5vw;
+}
+
+#ilust img {
+	float: right;
+	width: 30vw;
+	margin-right: 0.8vw;
 }
 
 #trabalhos {
@@ -130,4 +156,26 @@ a[href*="about"] {
 #vitrine img:hover {
 	cursor: pointer;
 	filter: brightness(35%);
+}
+
+#footnote {
+	bottom: 3.4vh;
+	margin: -2.5vh -3vw;
+	display: inline-flex;
+	font-family: Verdana;
+	font-size: 
+	text-align: right;
+	width: 99.8vw;
+	height: 7vh;
+	background-color: #404040;
+}
+
+#footnote p:nth-child(1) {
+	text-align: left;
+	margin-left: 4vw;
+}
+
+#footnote p:nth-child(2) {
+	text-align: right;
+	margin-left: 61.5vw;
 }

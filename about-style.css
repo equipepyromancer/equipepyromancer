@@ -10,6 +10,9 @@
 
 body {
 	margin: -0.1vh 2vw;
+	background-image: url("assets/decorative/BG3.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 h1 {
@@ -22,13 +25,14 @@ a:visited {
 }
 
 #font-bar {
+	z-index: 1;
 	position: sticky;
 	top: -0.1vh;
-	margin: -2.5vh -3vw;
+	margin: -2.5vh -2vw;
 	display: inline-block;
 	font-family: Verdana;
 	text-align: right;
-	width: 99.8vw;
+	width: 100vw;
 	height: 3.5vh;
 	background-color: #000;
 }
@@ -45,23 +49,24 @@ a:visited {
 }
 
 .increase {
-	margin-right: 1vw;
+	margin-right: 3.5vw;
 }
 
 nav {
+	z-index: 1;
 	position: sticky;
 	top: 3.4vh;
-	margin: -2.5vh -3vw;
+	margin: -2.5vh -2vw;
 	display: inline-block;
 	text-align: right;
-	width: 99.8vw;
+	width: 100vw;
 	height: 7vh;
 	background-color: #404040;
 }
 
 nav img {
 	float: left;
-	margin-left: 4vw;
+	margin-left: 1vw;
 	margin-top: 0.2vw;
 	width: 300px;
 	height: 40px;
@@ -75,25 +80,25 @@ nav a {
 }
 
 a[href*="about"] {
-	margin-right: 1.5vw;
+	margin-right: 4vw;
 }
 
 #footnote {
-	margin: -1vh -3vw;
+	margin: -1vh -2vw;
 	display: inline-flex;
 	font-family: Verdana;
 	text-align: right;
-	width: 99.8vw;
+	width: 100vw;
 	height: 7vh;
 	background-color: #404040;
 }
 
 #footnote p:nth-child(1) {
 	text-align: left;
-	margin-left: 2.5vw;
+	margin-left: 3.5vw;
 }
 
 #footnote p:nth-child(2) {
 	text-align: right;
-	margin-left: 64vw;
+	margin-left: 61.5vw;
 }
