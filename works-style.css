@@ -12,16 +12,13 @@ body {
 	margin: -0.1vh 2vw;
 	background-image: url("assets/decorative/BG3.png");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100vw 100vh;
+	background-attachment: fixed;
 }
 
 h1 {
 	font-family: breatheFire2;
 	font-size: calc(3.5 * var(--base-font-size));
-}
-
-a:visited {
-	color: orange;
 }
 
 #font-bar {
@@ -73,10 +70,16 @@ nav img {
 }
 
 nav a {
+	text-decoration: none;
+	color: #F87730;
 	margin-left: 10vw;
 	font-family: breatheFire2, Verdana;
 	font-size: 2em/*calc(2*var(--base-font-size))*/;
 	line-height: 1.5em/*calc(2.75*var(--base-font-size))*/;
+}
+
+nav a[href*="works"] {
+	text-decoration: underline;
 }
 
 a[href*="about"] {
