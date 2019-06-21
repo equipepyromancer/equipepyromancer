@@ -330,6 +330,14 @@ a[href*="about"] {
 	width: 100px;
 	height: 100px;
 	margin: 5px;
+	filter: brightness(70%);
+}
+
+/*Imagem do slide de navegação com mouse em cima recebe destaque*/
+.slider-nav img:hover {
+	cursor: pointer;
+	filter: brightness(120%);
+}
 }
 
 /*Deixa claro que as imagens podem ser clicadas*/

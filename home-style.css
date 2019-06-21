@@ -126,11 +126,12 @@ a[href*="about"] {
 }
 
 #landing h2 {
-	color: #F87730;
-	font-size: 4.1vw;
+	color: #F9F8D6;
+	font-size: 3vw;
+	font-family: Verdana;
 	text-align: right;
 	position: relative;
-	right: 7vw;
+	right: 8vw;
 	top: -20vw;
 }
 
@@ -383,6 +384,7 @@ a[href*="about"] {
 
 #formulario #enviar {
 	font-family: Verdana;
+	font-size: 2vw;
 	width: 10vw;
 	height: 3vw;
 }
