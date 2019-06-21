@@ -25,7 +25,12 @@ h1 {
 
 h2 {
 	font-family: breatheFire2;
-	font-size: calc(2.5 * var(--base-font-size));
+	font-size: 3vw;
+}
+
+p {
+	font-family: Verdana;
+	font-size: var(--base-font-size);
 }
 
 /*Configuração da barra de acessibilidade para fontes*/
@@ -139,38 +144,43 @@ a[href*="about"] {
 
 #serviços h1 {
 	color: #F87730;
-	margin-top: 3.5vw;
+	padding-top: 2.5vw;
 }
 
-#prog {
-	margin-top: -1.25vw;
+#serviços h2:nth-child(2) {
+	color: #F9F8D6;
+	margin-left: -40vw;
 }
 
-#prog h2 {
-	text-align: left;
-	margin-left: 33.5vw;
+#serviços h2:nth-child(3) {
+	color: #F9F8D6;
+	margin-right: -40vw;
+	margin-top: -6vw;
 }
 
-#prog img {
-	float: left;
-	width: 30vw;
-	margin-left: 40px;
+#serviços p:nth-child(5) {
+	margin-left: 12.5vw;
+	margin-top: 1.5vw;
+	color: #F9F8D6;
+	width: 25vw;
+	text-align: justify;
 }
 
-#ilust {
-	position: relative;
-	bottom: -10vw;
+#serviços p:nth-child(6) {
+	margin-left: 52vw;
+	margin-top: -8vw;
+	color: #F9F8D6;
+	width: 25vw;
+	text-align: justify;
 }
 
-#ilust h2 {
-	text-align: right;
-	margin-right: 33.5vw;
-}
-
-#ilust img {
-	float: right;
-	width: 30vw;
-	margin-right: 30px;
+#serviços #stones {
+	display: flex;
+	justify-content: space-around;
+	align-content: space-around;
+	margin: -1vw auto;
+	width: 100%;
+	height: 40%;
 }
 
 /*Configuração para a "terceira tela" da página inicial*/
@@ -333,21 +343,21 @@ a[href*="about"] {
 
 #contato h1 {
 	color: #F87730;
-	margin-top: 3.5vw;
+	padding-top: 4vw;
 }
 
 #contato img {
 	z-index: -1;
 	transform: scaleX(-1);
-	margin-top: -22vw;
-	margin-left: 22.5vw;
+	margin-top: -24vw;
+	margin-left: 18vw;
 	width: 75%;
 	height: 75%;
 }
 
 #formulario {
 	z-index: 2;
-	margin-top: -1.75vw;
+	margin-top: -2vw;
 }
 
 #formulario #email {
@@ -381,7 +391,7 @@ a[href*="about"] {
 #footnote {
 	bottom: 3.4vh;
 	color: #F9F8D6;
-	margin: -2.5vh -3vw;
+	margin: 0 -3vw -15vw;
 	display: inline-flex;
 	font-family: Verdana;
 	line-height: 1vw;
