@@ -28,7 +28,7 @@ h1 {
 
 /*Configuração da barra de acessibilidade para fontes*/
 #font-bar {
-	z-index: 1;
+	z-index: 3;
 	position: sticky;
 	top: -0.1vh;
 	margin: -2.5vh -2vw;
@@ -58,7 +58,7 @@ h1 {
 
 /*Configuração da barra de navegação do site*/
 nav {
-	z-index: 1;
+	z-index: 3;
 	position: sticky;
 	top: 3.4vh;
 	margin: -2.5vh -2vw;
@@ -97,9 +97,120 @@ a[href*="about"] {
 	margin-right: 4vw;
 }
 
+/*Isola um espaço na tela que vai ser usado para definir melhor o slider*/
+.content { 
+	position: relative;
+	width: 900px;
+	height: 700px;
+	z-index: 1;
+	margin: 0 auto;
+}
+
+/*Configurações da aparência do Slick Slider*/
+ /*Oculta contúdo que possa sobrar*/
+.slick-initialized {
+	overflow: hidden;
+}
+
+/*Posicionamento do slider de navegação*/
+.slider-nav {
+	width: 30%;
+	float: left;
+	margin-left: -18%;
+	z-index: 1;
+	margin-top: 2%;
+}
+
+/*Dimensionamento das imagens exibidas na navegação*/
+.slider-nav img {
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+}
+
+/*Posicionamento da imagem selecionada que será exibida*/
+.show {
+	width: 65%;
+	height: 300px;
+	float: right;
+	margin-top: 8%;
+	margin-right: 20%;
+}
+
+/*Dimensionamento da imagem em forma de link*/
+.slider-show a {
+	float: left;
+	width: 100%;
+	height: 330px;
+}
+
+/*Dimensionamento da exibição da imagem*/
+.slider-show img {
+	width: 100%;
+	height: 330px;
+}
+
+/* LightBOX */
+#bg, #bg2, #bg3, #bg4, #bg5, #bg6, #bg7, #bg8, #bg9 {
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.8); /* .8 é a opacidade, pra escurecer a tela quando aparecer o "pop-up" */
+	position: fixed;
+	display: none; /* pra o fade out só aparecer quando precisar */
+}
+
+/*Switch do fadeout*/
+#bg:target, #bg2:target, #bg3:target, #bg4:target, #bg5:target, #bg6:target, #bg7:target, #bg8:target, #bg9:target {
+	display:block; 
+}
+
+#bg:target ~ .box1, #bg2:target ~ .box1, #bg3:target ~ .box1, #bg4:target ~ .box1, #bg5:target ~ .box1, #bg6:target ~ .box1, #bg7:target ~ .box1, #bg8:target ~ .box1, #bg9:target ~ .box1 { /* mostra a  imagem */
+	top: 150px; /* traz a imagem pra baixo */
+	transition all: .3s;
+	transition-delay: .2s;
+}
+
+/*Configura aparência da imagem a ser exibida em zoom*/
+.box1 {
+	z-index: 1;
+	height: 500px;
+	width: 80vw;
+	position: absolute;
+	margin-left: 10vw;
+	top: 10vw;
+}
+
+/*Dimensionamento da imagem exibida*/
+.box1 img {
+	width: 80vw;
+	height: 70vh;
+	position: absolute;
+}
+
+/*Botão para fechar exibição em zoom*/
+#close {
+	color: #F9F8D6;
+	font-family: Verdana;
+	text-decoration: none;
+	font-size: 35px; 
+	position: absolute;
+	background-color: #F87730;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	right: 0; /*Posição do botão*/
+}
+
+#close:hover {
+	opacity: 0.6;
+}
+
 /*Configuração para o rodapé*/
 #footnote {
-	margin: 67vh -2vw 0;
+	margin: -20vw -2vw;
 	color: #F9F8D6;
 	display: inline-flex;
 	font-family: Verdana;

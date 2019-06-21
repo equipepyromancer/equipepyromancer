@@ -4,8 +4,6 @@
 		<meta charset="UTF-8">
 		<title>Equipe Pyromancer</title>
 		<link type="text/css" rel="stylesheet" href="works-style.css">
-		<script type="text/javascript" src="script.js"></script>
-		<script src="jquery/jquery-3.2.1.min.js"></script>
 	</head>
 	<body>
 		<!-- Barra para acessibilidade das fontes -->
@@ -24,13 +22,132 @@
 		<h1>Trabalhos</h1>
 		<!-- "Primeira tela" da página, mostrando o primeiro trabalho -->
 		<div id="reservoir">
+			<!-- Classe que engloba Nav e Show para dimensioná-las adequadamente -->
+			<div class="content">
+				<!-- Slider de Navegação entre as imagens do jogo-->
+				<div class="nav">
+						<div class="slider-nav">
+							<img src="./assets/photos/reservoir.png">
+							<img src="./assets/photos/reservoir2.png">	
+							<img src="./assets/photos/reservoir3.png">		
+						</div>
+					<!-- Exibição da Imagem selecionada no Slider de Navegação -->
+					<div class="show">
+						<div class="slider-show">
+							<a href="#bg"><img src="assets/photos/reservoir.png"></a>
+							<a href="#bg2"><img src="assets/photos/reservoir2.png"></a>
+							<a href="#bg3"><img src="assets/photos/reservoir3.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			 <!-- aplicação do Lightbox -->
+			<div id="bg">
+				<div class="box1">
+					<img src="assets/photos/reservoir.png" width="600px" height="300px">
+					<a href="" id ="close">X</a>
+				</div>	
+			</div>
+			<div id="bg2">
+				<div class="box1">
+					<img src="assets/photos/reservoir2.png" width="600px" height="300px">
+					<a href="" id="close">X</a>
+				</div>	
+			</div>
+			<div id="bg3">
+				<div class="box1">
+					<img src="assets/photos/reservoir3.png" width="600px" height="300px">
+					<a href="" id="close">X</a>
+				</div>
+			</div>
 		</div>
 		<!-- "Segunda tela" da página, mostrando o segundo trabalho -->
 		<div id="megamania">
+			<!-- Classe que engloba Nav e Show para dimensioná-las adequadamente -->
+			<div class="content">
+				<!-- Slider de Navegação entre as imagens do jogo-->
+				<div class="nav">
+						<div class="slider-nav">
+							<img src="./assets/photos/megamania.png">
+							<img src="./assets/photos/megamania2.png">	
+							<img src="./assets/photos/megamania3.png">		
+						</div>
+					<!-- Exibição da Imagem selecionada no Slider de Navegação -->
+					<div class="show">
+						<div class="slider-show">
+							<a href="#bg4"><img src="assets/photos/megamania.png"></a>
+							<a href="#bg5"><img src="assets/photos/megamania2.png"></a>
+							<a href="#bg6"><img src="assets/photos/megamania3.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			 <!-- aplicação do Lightbox -->
+			<div id="bg4">
+				<div class="box1">
+					<img src="assets/photos/megamania.png" width="600px" height="300px">
+					<a href="" id ="close">X</a>
+				</div>	
+			</div>
+			<div id="bg5">
+				<div class="box1">
+					<img src="assets/photos/megamania2.png" width="600px" height="300px">
+					<a href="" id="close">X</a>
+				</div>	
+			</div>
+			<div id="bg6">
+				<div class="box1">
+					<img src="assets/photos/megamania3.png" width="600px" height="300px">
+					<a href="" id="close">X</a>
+				</div>
+			</div>
 		</div>
 		<!-- "Terceira tela" da página, mostrando o terceiro trabalho -->
 		<div id="visage">
+			<!-- Classe que engloba Nav e Show para dimensioná-las adequadamente -->
+			<div class="content">
+				<!-- Slider de Navegação entre as imagens do jogo-->
+				<div class="nav">
+						<div class="slider-nav">
+							<img src="./assets/photos/visage.png">
+							<img src="./assets/photos/visage2.png">	
+							<img src="./assets/photos/visage3.png">		
+						</div>
+					<!-- Exibição da Imagem selecionada no Slider de Navegação -->
+					<div class="show">
+						<div class="slider-show">
+							<a href="#bg7"><img src="assets/photos/visage.png"></a>
+							<a href="#bg8"><img src="assets/photos/visage2.png"></a>
+							<a href="#bg9"><img src="assets/photos/visage3.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			 <!-- aplicação do Lightbox -->
+			<div id="bg7">
+				<div class="box1">
+					<img src="assets/photos/visage.png">
+					<a href="" id ="close">X</a>
+				</div>	
+			</div>
+			<div id="bg8">
+				<div class="box1">
+					<img src="assets/photos/visage2.png">
+					<a href="" id="close">X</a>
+				</div>	
+			</div>
+			<div id="bg9">
+				<div class="box1">
+					<img src="assets/photos/visage3.png">
+					<a href="" id="close">X</a>
+				</div>
+			</div>
 		</div>
+		<!-- Scripts para exibição de imagens personalizada (precisam ser carregados no final) -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
 		<!-- Rodapé do site -->
 		<div id="footnote">
 			<p>2019 Equipe Pyromancer</p>

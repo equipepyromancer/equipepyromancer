@@ -26,3 +26,24 @@ function FormularioEnviado() {
 	document.getElementById("assunto").value = "";
 	document.getElementById("mensagem").value = "";
 }
+
+//Configurações do plugin Slick Slider
+ $('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll:1,
+  infinite: true,
+  speed: 300,
+  asNavFor: '.slider-show',
+  vertical: true,
+  verticalSwiming: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+
+$('.slider-show').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
