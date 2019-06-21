@@ -9,6 +9,14 @@
 	src: url('assets/fonts/breathe-fire-ii/breathe-fire-ii.otf');
 }
 
+/*Classe para tornar âncoras mais precisas*/
+.anchor {
+   display: block;
+   height: 180px;
+   margin-top: -180px;
+   visibility: hidden;
+}
+
 /*Código inicial para configurar aparência da página*/
 body {
 	margin: -0.1vh 2vw;
@@ -97,11 +105,41 @@ a[href*="about"] {
 	margin-right: 4vw;
 }
 
+#reservoir h1 {
+	text-align: left;
+	margin-left: 3vw;
+	margin-top: 0.5vw;
+}
+
+#reservoir .content {
+	margin-top: -7vw;
+}
+
+#megamania h1 {
+	text-align: left;
+	margin-left: 3vw;
+	margin-top: 0.5vw;
+}
+
+#megamania .content {
+	margin-top: -7vw;
+}
+
+#visage h1 {
+	text-align: left;
+	margin-left: 3vw;
+	margin-top: 0.5vw;
+}
+
+#visage .content {
+	margin-top: -7vw;
+}
+
 /*Isola um espaço na tela que vai ser usado para definir melhor o slider*/
 .content { 
 	position: relative;
 	width: 900px;
-	height: 700px;
+	height: 525px;
 	z-index: 1;
 	margin: 0 auto;
 }
@@ -126,6 +164,11 @@ a[href*="about"] {
 	width: 100px;
 	height: 100px;
 	margin: 5px;
+}
+
+/*Deixa claro que as imagens podem ser clicadas*/
+.slider-nav img:hover {
+	cursor: pointer;
 }
 
 /*Posicionamento da imagem selecionada que será exibida*/
@@ -157,9 +200,9 @@ a[href*="about"] {
 	height: 100%;
 	top: 0;
 	left: 0;
-	background-color: rgba(0,0,0,.8); /* .8 é a opacidade, pra escurecer a tela quando aparecer o "pop-up" */
+	background-color: rgba(0,0,0,0.8); /* 0.8 é a opacidade, para escurecer a tela quando aparecer o "pop-up" */
 	position: fixed;
-	display: none; /* pra o fade out só aparecer quando precisar */
+	display: none; /*Para o fade-out só aparecer quando precisar*/
 }
 
 /*Switch do fadeout*/
@@ -168,9 +211,9 @@ a[href*="about"] {
 }
 
 #bg:target ~ .box1, #bg2:target ~ .box1, #bg3:target ~ .box1, #bg4:target ~ .box1, #bg5:target ~ .box1, #bg6:target ~ .box1, #bg7:target ~ .box1, #bg8:target ~ .box1, #bg9:target ~ .box1 { /* mostra a  imagem */
-	top: 150px; /* traz a imagem pra baixo */
-	transition all: .3s;
-	transition-delay: .2s;
+	top: 150px;
+	transition all: 0.3s;
+	transition-delay: 0.2s;
 }
 
 /*Configura aparência da imagem a ser exibida em zoom*/
