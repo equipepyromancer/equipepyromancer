@@ -34,6 +34,10 @@ h1 {
 	font-size: 4vw;
 }
 
+p {
+	font-size: var(--base-font-size);
+}
+
 /*Configuração da barra de acessibilidade para fontes*/
 #font-bar {
 	z-index: 3;
@@ -91,7 +95,7 @@ nav a {
 	margin-left: 10vw;
 	font-family: breatheFire2, Verdana;
 	font-size: 2.3vw;
-	line-height: 1.5em/*calc(2.75*var(--base-font-size))*/;
+	line-height: 1.5em;
 }
 
 /*Destaque para o elemento que indica a página atual*/
@@ -105,6 +109,19 @@ a[href*="about"] {
 	margin-right: 4vw;
 }
 
+/*Isola um espaço na tela que vai ser usado para definir melhor o slider*/
+.content { 
+	position: absolute;
+	width: 900px;
+	height: 300px;
+	z-index: 1;
+	margin: 0 auto;
+}
+
+#reservoir {
+	height: 85vh;
+}
+
 #reservoir h1 {
 	text-align: left;
 	margin-left: 3vw;
@@ -113,43 +130,61 @@ a[href*="about"] {
 
 #reservoir p {
 	font-family: Verdana;
+	text-align: justify;
 	color: #F9F8D6;
-	text-align-last: left;
 	margin-top: 2vw;
-	margin-left: 70vw;
+	margin-left: 68vw;
+	width: 26vw;
 }
 
 #reservoir .content {
 	margin-top: -7vw;
 }
 
+#megamania {
+	height: 85vh;
+}
+
 #megamania h1 {
 	text-align: left;
 	margin-left: 3vw;
-	margin-top: 0.5vw;
+	margin-top: -8vw;
+}
+
+#megamania p {
+	font-family: Verdana;
+	text-align: justify;
+	color: #F9F8D6;
+	margin-top: 2vw;
+	margin-left: 68vw;
+	width: 26vw;
 }
 
 #megamania .content {
-	margin-top: -7vw;
+	margin-top: -10vw;
+}
+
+#visage {
+	height: 75vh;
 }
 
 #visage h1 {
 	text-align: left;
 	margin-left: 3vw;
-	margin-top: 0.5vw;
+	margin-top: -8vw;
+}
+
+#visage p {
+	font-family: Verdana;
+	text-align: justify;
+	color: #F9F8D6;
+	margin-top: 2vw;
+	margin-left: 68vw;
+	width: 26vw;
 }
 
 #visage .content {
-	margin-top: -7vw;
-}
-
-/*Isola um espaço na tela que vai ser usado para definir melhor o slider*/
-.content { 
-	position: relative;
-	width: 900px;
-	height: 525px;
-	z-index: 1;
-	margin: 0 auto;
+	margin-top: -10vw;
 }
 
 /*Configurações da aparência do Slick Slider*/
@@ -162,9 +197,9 @@ a[href*="about"] {
 .slider-nav {
 	width: 30%;
 	float: left;
-	margin-left: -18%;
+	margin-left: 4%;
 	z-index: 1;
-	margin-top: 2%;
+	margin-top: -15%;
 }
 
 /*Dimensionamento das imagens exibidas na navegação*/
@@ -184,8 +219,8 @@ a[href*="about"] {
 	width: 65%;
 	height: 300px;
 	float: right;
-	margin-top: 8%;
-	margin-right: 20%;
+	margin-top: -9%;
+	margin-right: 0%;
 }
 
 /*Dimensionamento da imagem em forma de link*/
@@ -261,7 +296,7 @@ a[href*="about"] {
 
 /*Configuração para o rodapé*/
 #footnote {
-	margin: -20vw -2vw;
+	margin: -10vw -2vw 0;
 	color: #F9F8D6;
 	display: inline-flex;
 	font-family: Verdana;
