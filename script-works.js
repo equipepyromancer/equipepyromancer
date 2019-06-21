@@ -15,7 +15,6 @@ function MudarTamanhoBaseFonte(e) {
 
   //Aplica o valor alterado na variável global do CSS 
   elemento.css("--base-font-size", fontSize);
-  alert(fontSize);
 }
 
 function FormularioEnviado() {
