@@ -155,6 +155,7 @@ a[href*="about"] {
 	width: 26vw;
 }
 
+/*Configuração da animação com link para o jogo*/
 #reservoir #reservoir-animation h2 {
 	position: absolute;
 	color: white;
@@ -168,6 +169,7 @@ a[href*="about"] {
 	color: black;
 }
 
+/*Três imagens sobrepostas e uma mudança de opacidade criam o efeito da animação*/
 #reservoir #reservoir-animation img {
 	position: absolute;
 	top: 38vw;
@@ -211,6 +213,7 @@ a[href*="about"] {
 	width: 26vw;
 }
 
+/*Configuração da animação com link para o jogo*/
 #megamania #megamania-animation h2 {
 	position: absolute;
 	color: white;
@@ -224,6 +227,7 @@ a[href*="about"] {
 	color: black;
 }
 
+/*Três imagens sobrepostas e uma mudança de opacidade criam o efeito da animação*/
 #megamania #megamania-animation img {
 	position: absolute;
 	top: 72.5vw;
@@ -267,6 +271,7 @@ a[href*="about"] {
 	width: 26vw;
 }
 
+/*Configuração da animação com link para o jogo*/
 #visage #visage-animation h2 {
 	position: absolute;
 	color: white;
@@ -280,6 +285,7 @@ a[href*="about"] {
 	color: black;
 }
 
+/*Três imagens sobrepostas e uma mudança de opacidade criam o efeito da animação*/
 #visage #visage-animation img {
 	position: absolute;
 	top: 107.5vw;

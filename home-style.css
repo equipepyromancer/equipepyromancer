@@ -131,8 +131,10 @@ a[href*="about"] {
 
 /*Configuração para a "segunda tela" da página inicial*/
 #serviços {
-	height: 100vh;
+	height: 90vh;
 	text-align: center;
+	background-color: #0F213E;
+	margin: 0 35px;
 }
 
 #serviços h1 {
@@ -334,7 +336,17 @@ a[href*="about"] {
 	margin-top: 3.5vw;
 }
 
+#contato img {
+	z-index: -1;
+	transform: scaleX(-1);
+	margin-top: -22vw;
+	margin-left: 22.5vw;
+	width: 75%;
+	height: 75%;
+}
+
 #formulario {
+	z-index: 2;
 	margin-top: -1.75vw;
 }
 
