@@ -288,7 +288,7 @@ a[href*="about"] {
 /*Três imagens sobrepostas e uma mudança de opacidade criam o efeito da animação*/
 #visage #visage-animation img {
 	position: absolute;
-	top: 214.5vh;
+	top: 1470px;
 	left: 70vw;
 	width: 25vw;
 }
