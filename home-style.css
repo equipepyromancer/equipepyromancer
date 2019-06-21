@@ -1,13 +1,15 @@
-
+/*Declaração da variável para tamanho base das fontes redimensionáveis*/
 :root {
 	--base-font-size: 16px;
 }
 
+/*Fonte "personalizada" usada no site*/
 @font-face {
 	font-family: breatheFire2;
 	src: url('assets/fonts/breathe-fire-ii/breathe-fire-ii.otf');
 }
 
+/*Código inicial para configurar aparência da página*/
 body {
 	margin: -0.1vh 2vw;
 	background-image: url("assets/decorative/BG3.png");
@@ -26,6 +28,7 @@ h2 {
 	font-size: calc(2.5 * var(--base-font-size));
 }
 
+/*Configuração da barra de acessibilidade para fontes*/
 #font-bar {
 	z-index: 2;
 	position: sticky;
@@ -50,10 +53,12 @@ h2 {
   display: inline-block;
 }
 
+/*O último elemento da barra de acessibilidade dá uma margem lateral*/
 .increase {
 	margin-right: 50px;
 }
 
+/*Configuração da barra de navegação do site*/
 nav {
 	z-index: 2;
 	position: sticky;
@@ -80,18 +85,21 @@ nav a {
 	margin-left: 10vw;
 	font-family: breatheFire2, Verdana;
 	font-size: 2.3vw;
-	line-height: 1.5em/*calc(2.75*var(--base-font-size))*/;
+	line-height: 1.5em;
 }
 
+/*Destaque para o elemento que indica a página atual*/
 nav a[href*="index"] {
 	color: #F9F8D6;
 	text-decoration: underline;
 }
 
+/*O último elemento da barra de navegação dá uma margem lateral*/
 a[href*="about"] {
 	margin-right: 55px;
 }
 
+/*Configuração para a "primeira tela" da página inicial*/
 #landing {
 	height: 100vh;
 }
@@ -121,6 +129,7 @@ a[href*="about"] {
 	top: -20vw;
 }
 
+/*Configuração para a "segunda tela" da página inicial*/
 #serviços {
 	height: 100vh;
 	text-align: center;
@@ -162,6 +171,7 @@ a[href*="about"] {
 	margin-right: 30px;
 }
 
+/*Configuração para a "terceira tela" da página inicial*/
 #trabalhos {
 	height: 100vh;
 	text-align: center;
@@ -191,6 +201,7 @@ a[href*="about"] {
 	filter: brightness(100%);
 }
 
+/*Código responsável pelo efeito de fade na capa do primeiro trabalho*/
 #vitrine a:nth-child(1) h3 {
 	text-decoration: none;
 	color: #F9F8D6;
@@ -230,6 +241,7 @@ a[href*="about"] {
 	filter: opacity(100%);
 }
 
+/*Código responsável pelo efeito de fade na capa do segundo trabalho*/
 #vitrine a:nth-child(2) h3 {
 	text-decoration: none;
 	color: #F9F8D6;
@@ -270,6 +282,7 @@ a[href*="about"] {
 	filter: opacity(100%);
 }
 
+/*Código responsável pelo efeito de fade na capa do terceiro trabalho*/
 #vitrine a:nth-child(3) h3 {
 	text-decoration: none;
 	color: #F9F8D6;
@@ -310,6 +323,7 @@ a[href*="about"] {
 	filter: opacity(100%);
 }
 
+/*Configuração para a "quarta tela" da página inicial*/
 #contato {
 	height: 83vh;
 	margin-left: 40px;
@@ -351,6 +365,7 @@ a[href*="about"] {
 	height: 3vw;
 }
 
+/*Configuração para o rodapé*/
 #footnote {
 	bottom: 3.4vh;
 	color: #F9F8D6;

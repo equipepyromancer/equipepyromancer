@@ -1,13 +1,15 @@
-
+/*Declaração da variável para tamanho base das fontes redimensionáveis*/
 :root {
 	--base-font-size: 16px;
 }
 
+/*Fonte "personalizada" usada no site*/
 @font-face {
 	font-family: breatheFire2;
 	src: url('assets/fonts/breathe-fire-ii/breathe-fire-ii.otf');
 }
 
+/*Código inicial para configurar aparência da página*/
 body {
 	margin: -0.1vh 2vw;
 	background-image: url("assets/decorative/BG3.png");
@@ -24,6 +26,7 @@ h1 {
 	font-size: 4vw;
 }
 
+/*Configuração da barra de acessibilidade para fontes*/
 #font-bar {
 	z-index: 1;
 	position: sticky;
@@ -48,10 +51,12 @@ h1 {
   display: inline-block;
 }
 
+/*O último elemento da barra de acessibilidade dá uma margem lateral*/
 .increase {
 	margin-right: 3.5vw;
 }
 
+/*Configuração da barra de navegação do site*/
 nav {
 	z-index: 1;
 	position: sticky;
@@ -81,12 +86,28 @@ nav a {
 	line-height: 1.5em;
 }
 
+/*O último elemento da barra de navegação dá uma margem lateral
+Nesse caso também é o elemento em destaque para indicar a página atual*/
 a[href*="about"] {
 	color: #F9F8D6;
 	text-decoration: underline;
 	margin-right: 4vw;
 }
 
+/*Configuração para a flex-box com fotos dos membros da equipe*/
+#vitrine {
+	height: 15vw;
+	width: 90vw;
+	margin-left: 3vw;
+	margin-top: 7vw;
+	display: flex;
+	flex-direction: row;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: space-around;
+}
+
+/*Configuração das fotos contidas na flex-box*/
 .fotos {
 	position: relative;
 }
@@ -113,18 +134,7 @@ a[href*="about"] {
 	bottom: -4vw;
 }
 
-#vitrine {
-	height: 15vw;
-	width: 90vw;
-	margin-left: 3vw;
-	margin-top: 7vw;
-	display: flex;
-	flex-direction: row;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	align-content: space-around;
-}
-
+/*Configuração para o rodapé*/
 #footnote {
 	margin: 27.2vh -2vw 0;
 	color: #F9F8D6;
