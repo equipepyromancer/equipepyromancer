@@ -185,7 +185,7 @@ a[href*="about"] {
 
 /*Configuração para a "terceira tela" da página inicial*/
 #trabalhos {
-	height: 100vh;
+	height: 70vh;
 	text-align: center;
 }
 
@@ -349,7 +349,7 @@ a[href*="about"] {
 #contato img {
 	z-index: -1;
 	transform: scaleX(-1);
-	margin-top: -24vw;
+	margin-top: -24.5vw;
 	margin-left: 18vw;
 	width: 75%;
 	height: 75%;
