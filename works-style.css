@@ -111,6 +111,14 @@ a[href*="about"] {
 	margin-top: 0.5vw;
 }
 
+#reservoir p {
+	font-family: Verdana;
+	color: #F9F8D6;
+	text-align-last: left;
+	margin-top: 2vw;
+	margin-left: 70vw;
+}
+
 #reservoir .content {
 	margin-top: -7vw;
 }
