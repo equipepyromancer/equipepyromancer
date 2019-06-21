@@ -149,12 +149,14 @@ a[href*="about"] {
 
 #serviços h2:nth-child(2) {
 	color: #F9F8D6;
-	margin-left: -40vw;
+	padding-left: 18vw;
+	text-align: left;
 }
 
 #serviços h2:nth-child(3) {
 	color: #F9F8D6;
-	margin-right: -40vw;
+	text-align: right;
+	padding-right: 16.5vw;
 	margin-top: -6vw;
 }
 
@@ -179,8 +181,6 @@ a[href*="about"] {
 	justify-content: space-around;
 	align-content: space-around;
 	margin: -1vw auto;
-	width: 100%;
-	height: 40%;
 }
 
 /*Configuração para a "terceira tela" da página inicial*/
