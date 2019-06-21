@@ -18,7 +18,7 @@ body {
 
 h1 {
 	font-family: breatheFire2;
-	font-size: calc(3.5 * var(--base-font-size));
+	font-size: 4vw;
 }
 
 h2 {
@@ -27,7 +27,7 @@ h2 {
 }
 
 #font-bar {
-	z-index: 1;
+	z-index: 2;
 	position: sticky;
 	top: -0.1vh;
 	margin: -2.5vh -2vw;
@@ -36,12 +36,12 @@ h2 {
 	text-align: right;
 	width: 98.8vw;
 	height: 3.5vh;
-	background-color: #000;
+	background-color: #1E0D0F;
 }
 
 .btn {
   border: none;
-  color: #FFF;
+  color: #F9F8D6;
   background-color: inherit;
   margin: 0 -0.1vw;
   line-height: 1em;
@@ -55,7 +55,7 @@ h2 {
 }
 
 nav {
-	z-index: 1;
+	z-index: 2;
 	position: sticky;
 	top: 3.4vh;
 	margin: -2.5vh -2vw;
@@ -63,15 +63,15 @@ nav {
 	text-align: right;
 	width: 98.8vw;
 	height: 7vh;
-	background-color: #404040;
+	background-image: url("assets/decorative/BGMenu.png")
 }
 
 nav img {
 	float: left;
-	margin-left: 40px;
+	margin-left: 3vw;
 	margin-top: 0.2vw;
-	width: 300px;
-	height: 40px;
+	width: 22vw;
+	height: 3vw;
 }
 
 nav a {
@@ -79,11 +79,12 @@ nav a {
 	color: #F87730;
 	margin-left: 10vw;
 	font-family: breatheFire2, Verdana;
-	font-size: 2em/*calc(2*var(--base-font-size))*/;
+	font-size: 2.3vw;
 	line-height: 1.5em/*calc(2.75*var(--base-font-size))*/;
 }
 
 nav a[href*="index"] {
+	color: #F9F8D6;
 	text-decoration: underline;
 }
 
@@ -93,19 +94,31 @@ a[href*="about"] {
 
 #landing {
 	height: 100vh;
-	text-align: center;
 }
 
 #landing img {
 	position: relative;
 	top: 12.5vw;
-	width: 100%;
+	left: 7vw;
+	width: 20%;
 }
 
 #landing h1 {
 	color: #F87730;
+	font-size: 11.2vw;
+	text-align: right;
 	position: relative;
-	top: 13vw;
+	right: 7vw;
+	top: -15vw;
+}
+
+#landing h2 {
+	color: #F87730;
+	font-size: 4.1vw;
+	text-align: right;
+	position: relative;
+	right: 7vw;
+	top: -20vw;
 }
 
 #serviços {
@@ -173,13 +186,128 @@ a[href*="about"] {
 
 #vitrine img {
 	width: 29vw;
+	height: 25vw;
 	transition: 0.4s filter;
 	filter: brightness(100%);
 }
 
-#vitrine img:hover {
+#vitrine a:nth-child(1) h3 {
+	text-decoration: none;
+	color: #F9F8D6;
+	font-family: breatheFire2, Verdana;
+	font-size: 3vw;
+	left: 8vw;
+	margin-top: -22vw;
+	position: absolute;
+	z-index: 1;
+	transition: 0.4s filter;
+	filter: opacity(0%);
+}
+
+#vitrine a:nth-child(1) p {
+	text-decoration: none;
+	color: #F9F8D6;
+	font-family: Verdana;
+	font-size: 2vw;
+	left: 6.5vw;
+	margin-top: -15vw;
+	position: absolute;
+	z-index: 1;
+	transition: 0.4s filter;
+	filter: opacity(0%);
+}
+
+#vitrine a:nth-child(1) img:hover{
 	cursor: pointer;
-	filter: brightness(35%);
+	filter: brightness(25%);
+}
+
+#vitrine a:nth-child(1) img:hover ~ h3 {
+	filter: opacity(100%);
+}
+
+#vitrine a:nth-child(1) img:hover ~ p {
+	filter: opacity(100%);
+}
+
+#vitrine a:nth-child(2) h3 {
+	text-decoration: none;
+	color: #F9F8D6;
+	font-family: breatheFire2, Verdana;
+	font-size: 3vw;
+	left: 40vw;
+	margin-top: -22vw;
+	position: absolute;
+	z-index: 1;
+	transition: 0.4s filter;
+	filter: opacity(0%);
+}
+
+#vitrine a:nth-child(2) p {
+	text-decoration: none;
+	color: #F9F8D6;
+	font-family: Verdana;
+	font-size: 2vw;
+	left: 36.5vw;
+	margin-top: -15vw;
+	position: absolute;
+	z-index: 1;
+	transition: 0.4s filter;
+	filter: opacity(0%);
+}
+
+#vitrine a:nth-child(2) img:hover{
+	cursor: pointer;
+	filter: brightness(25%);
+}
+
+#vitrine a:nth-child(2) img:hover ~ h3 {
+	cursor: pointer;
+	filter: opacity(100%);
+}
+
+#vitrine a:nth-child(2) img:hover ~ p {
+	filter: opacity(100%);
+}
+
+#vitrine a:nth-child(3) h3 {
+	text-decoration: none;
+	color: #F9F8D6;
+	font-family: breatheFire2, Verdana;
+	font-size: 3vw;
+	left: 71vw;
+	margin-top: -22vw;
+	position: absolute;
+	z-index: 1;
+	transition: 0.4s filter;
+	filter: opacity(0%);
+}
+
+#vitrine a:nth-child(3) p {
+	text-decoration: none;
+	color: #F9F8D6;
+	font-family: Verdana;
+	font-size: 2vw;
+	left: 69vw;
+	margin-top: -15vw;
+	position: absolute;
+	z-index: 1;
+	transition: 0.4s filter;
+	filter: opacity(0%);
+}
+
+#vitrine a:nth-child(3) img:hover{
+	cursor: pointer;
+	filter: brightness(25%);
+}
+
+#vitrine a:nth-child(3) img:hover ~ h3 {
+	cursor: pointer;
+	filter: opacity(100%);
+}
+
+#vitrine a:nth-child(3) img:hover ~ p {
+	filter: opacity(100%);
 }
 
 #contato {
@@ -192,23 +320,57 @@ a[href*="about"] {
 	margin-top: 3.5vw;
 }
 
+#formulario {
+	margin-top: -1.75vw;
+}
+
+#formulario #email {
+	font-family: Verdana;
+	font-size: var(--base-font-size);
+	width: 15vw;
+}
+
+#formulario #assunto {
+	font-family: Verdana;
+	font-size: var(--base-font-size);
+	width: 15vw;
+}
+
+#formulario #mensagem {
+	font-family: Verdana;
+	font-size: var(--base-font-size);
+	margin-top: 0.5vw;
+	width: 30.7vw;
+	height: 20vw;
+	resize: none;
+}
+
+#formulario #enviar {
+	font-family: Verdana;
+	width: 10vw;
+	height: 3vw;
+}
+
 #footnote {
 	bottom: 3.4vh;
+	color: #F9F8D6;
 	margin: -2.5vh -3vw;
 	display: inline-flex;
 	font-family: Verdana;
+	font-size: 1.25vw;
+	line-height: 1vw;
 	text-align: right;
 	width: 99.8vw;
 	height: 7vh;
-	background-color: #404040;
+	background-image: url("assets/decorative/Rodapé.png")
 }
 
 #footnote p:nth-child(1) {
 	text-align: left;
-	margin-left: 80px;
+	margin-left: 5.8vw;
 }
 
 #footnote p:nth-child(2) {
 	text-align: right;
-	margin-left: 800px;
+	margin-left: 56.7vw;
 }

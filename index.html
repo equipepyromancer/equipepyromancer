@@ -8,21 +8,26 @@
 		<script src="jquery/jquery-3.2.1.min.js"></script>
 	</head>
 	<body>
+		<!-- Barra para acessibilidade das fontes -->
 		<div id="font-bar">
 			<button onClick="MudarTamanhoBaseFonte('n');" class="btn default">A</button>
 			<button onClick="MudarTamanhoBaseFonte('d');" class="btn reduce">A-</button>
 			<button onClick="MudarTamanhoBaseFonte('a');" class="btn increase">A+</button>
 		</div>
+		<!-- Barra de navevgação do site -->
 		<nav>
 			<img src="assets/decorative/Logotipo.png">
 			<a href="index.html">Home</a>
 			<a href="works.html">Trabalhos</a>
 			<a href="about.html">Sobre</a>
 		</nav>
+		<!-- Primeira tela do site, com apresentação -->
 		<div id="landing">
-			<img src="assets/decorative/Logotipo.png">
-			<h1>insira algum slogan ou algo assim aqui sei lá</h1>
+			<img src="assets/decorative/Logo.png">
+			<h1>pyromancer</h1>
+			<h2>desenvolvimento de jogos digitais</h2>
 		</div>
+		<!-- Segunda tela do site, com serviços disponíveis -->
 		<div id="serviços">
 			<h1>Nossos Serviços</h1>
 			<div id="prog">
@@ -36,20 +41,40 @@
 				<p>Lorem ipsum dolor sit amet</p>
 			</div>
 		</div>
+		<!-- Terceira tela do site, com trabalhos antigos -->
 		<div id="trabalhos">
 			<h1>Produções Pyromancer</h1>
 			<div id="vitrine">
-				<img src="assets/decorative/Volátil.png">
-				<img src="assets/decorative/Volátil.png">
-				<img src="assets/decorative/Volátil.png">
-				<img src="assets/decorative/Volátil.png">
-				<img src="assets/decorative/Volátil.png">
-				<img src="assets/decorative/Volátil.png">
+				<a href="">
+					<img src="assets/photos/reservoir.png">
+					<h3>Wasted Reservoir</h3>
+					<p>Jogo de ação com carros <br> e armas para um jogador</p>
+				</a>
+				<a href="">
+					<img src="assets/photos/megamania.png">
+					<h3>RE: Megamania</h3>
+					<p>Jogo arcade de batalha <br> de naves para um jogador</p>
+				</a>
+				<a href="">
+					<img src="assets/photos/visage.png">
+					<h3>Mansão Visage</h3>
+					<p>Jogo de suspense com <br> fantasmas para dois <br> jogadores</p>
+				</a>
 			</div>
 		</div>
+		<!-- Quarta tela do site, com contato -->
 		<div id="contato">
 			<h1>Contato</h1>
+			<div id="formulario">
+				<input type="text" id="email" name="email" placeholder="E-mail">
+				<input type="text" id="assunto" name="assunto" placeholder="Assunto">
+				<br>
+				<textarea id="mensagem" name="subject" placeholder="Mensagem"></textarea>
+				<br>
+				<button onClick="FormularioEnviado()" id="enviar" type="submit">Enviar</button>
+			</div> 
 		</div>
+		<!-- Rodapé do site -->
 		<div id="footnote">
 			<p>2019 Equipe Pyromancer</p>
 			<p>Todos os direitos reservados</p>

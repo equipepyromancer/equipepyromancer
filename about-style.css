@@ -18,7 +18,10 @@ body {
 
 h1 {
 	font-family: breatheFire2;
-	font-size: calc(3.5 * var(--base-font-size));
+	text-align: center;
+	margin-top: 3.5vw;
+	color: #F87730;
+	font-size: 4vw;
 }
 
 #font-bar {
@@ -31,12 +34,12 @@ h1 {
 	text-align: right;
 	width: 100vw;
 	height: 3.5vh;
-	background-color: #000;
+	background-color: #1E0D0F;
 }
 
 .btn {
   border: none;
-  color: #FFF;
+  color: #F9F8D6;
   background-color: inherit;
   margin: 0 -0.1vw;
   line-height: 1em;
@@ -58,15 +61,15 @@ nav {
 	text-align: right;
 	width: 100vw;
 	height: 7vh;
-	background-color: #404040;
+	background-image: url("assets/decorative/BGMenu.png")
 }
 
 nav img {
 	float: left;
-	margin-left: 40px;
+	margin-left: 3vw;
 	margin-top: 0.2vw;
-	width: 300px;
-	height: 40px;
+	width: 22vw;
+	height: 3vw;
 }
 
 nav a {
@@ -74,23 +77,63 @@ nav a {
 	color: #F87730;
 	margin-left: 10vw;
 	font-family: breatheFire2, Verdana;
-	font-size: 2em/*calc(2*var(--base-font-size))*/;
-	line-height: 1.5em/*calc(2.75*var(--base-font-size))*/;
+	font-size: 2.3vw;
+	line-height: 1.5em;
 }
 
 a[href*="about"] {
+	color: #F9F8D6;
 	text-decoration: underline;
 	margin-right: 4vw;
 }
 
+.fotos {
+	position: relative;
+}
+
+.fotos img:nth-child(1) {
+	width: 14vw;
+	height: 14vw;
+}
+
+.fotos img:nth-child(2) {
+	width: 16vw;
+	position: absolute;
+	left: -1vw;
+	top: 13vw;
+}
+
+.fotos h2 {
+	position: absolute;
+	font-family: breatheFire2;
+	color: #F87730;
+	font-size: 2.5vw;
+	margin-top: 1vw;
+	left: 3.5vw;
+	bottom: -4vw;
+}
+
+#vitrine {
+	height: 15vw;
+	width: 90vw;
+	margin-left: 3vw;
+	margin-top: 7vw;
+	display: flex;
+	flex-direction: row;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: space-around;
+}
+
 #footnote {
-	margin: 67vh -2vw 0;
+	margin: 27.2vh -2vw 0;
+	color: #F9F8D6;
 	display: inline-flex;
 	font-family: Verdana;
 	text-align: right;
 	width: 100vw;
 	height: 7vh;
-	background-color: #404040;
+	background-image: url("assets/decorative/Rodapé.png")
 }
 
 #footnote p:nth-child(1) {
